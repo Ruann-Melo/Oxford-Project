@@ -4,31 +4,33 @@ body, html {
   font: 400 15px/1.8 "Raleway", sans-serif;
 }
 
-.section-1 {
-  
-  /* The image used */
-
+#section-1 {
   background-image: url("static/oxford-background-big.jpg");
-
-  /* Full height */
 
   height: 100%;
   width: 100%;
-
-  /* Center and scale the image nicely */
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.section-2 {
+/* Change image to smaller ones for smaller screens */
+@media (max-width: 1000px) {
+  #section-1 {
+      background-image: url("static/oxford-background-medium.jpg");
+  }
+}
 
-  /* Full height */
+@media (max-width: 550px) {
+  #section-1 {
+      background-image: url("static/oxford-background-small.jpg");
+  }
+}
 
-  height: 50%;
+#section-2 {
+  height: 100%;
 
-  /* Center and scale the image nicely */
   padding: 18px;
   background-color: #fff;
   background-position: center;
@@ -37,16 +39,16 @@ body, html {
   text-align: center;
 }
 
-@media (max-width: 1000px) {
-  .section-1 {
-      background-image: url("static/oxford-background-medium.jpg");
-  }
-}
+#section-3 {
+  height: 5%;
 
-@media (max-width: 550px) {
-  .section-1 {
-      background-image: url("static/oxford-background-small.jpg");
-  }
+  padding: 50px;
+  color: #fff;
+  background-color: #002147;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
 
 #caption {
@@ -59,18 +61,14 @@ body, html {
 }
 
 .border {
-  /*background-color: #002147;
-  color: #fff;*/
   padding: 18px;
   font-size: 25px;
   letter-spacing: 10px;
 }
 
 #border-2 {
-  /*background-color: #002147;
-  color: #fff;*/
   padding: 18px;
-  font-size: 20px;
+  font-size: 0.95rem;
   letter-spacing: 5px;
 }
 
@@ -105,4 +103,13 @@ body, html {
 
 #btn-2:hover {
   background-color: cadetblue;
+}
+
+a {
+  text-decoration: none;
+  color: cyan ;
+}
+
+a:hover {
+  color: #b2b2b2;
 }
