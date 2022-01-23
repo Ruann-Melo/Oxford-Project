@@ -1,45 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
-ul {
-  list-style-type: none;
+body, html {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #002147;
+  font: 400 15px/1.8 "Raleway", sans-serif;
 }
-li {
-  float: left;
+
+.section-1 {
+  
+  /* The image used */
+
+  background-image: url("oxford-background-big.jpg");
+
+  /* Full height */
+
+  height: 100%;
+  width: 100%;
+
+  /* Center and scale the image nicely */
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  font-size: 25px;
+
+@media (max-width: 1000px) {
+  .section-1 {
+      background-image: url("oxford-background-medium.jpg");
+  }
+}
+
+@media (max-width: 550px) {
+  .section-1 {
+      background-image: url("oxford-background-small.jpg");
+  }
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
   text-align: center;
-  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
-li a:hover:not(.active) {
-  background-color: #2F72A8;
-}
-.active{
-  background-color: #002147;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
-}
-.btn {
-  background-color: DodgerBlue;
-  border: none;
-  color: white;
-  padding: 12px 30px;
-  cursor: pointer;
-  font-size: 20px;
-}
-.epm {
-    padding: 50px;
-}
-p{
-    font-family: Montserrat;
+
+.border {
+  /*background-color: #002147;
+  color: #fff;*/
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
