@@ -4,22 +4,51 @@
         <meta charset="UTF-8">
         <meta name="viewpoint" content="witdth=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="https://www.ox.ac.uk/sites/default/themes/custom/oxweb/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>University of Oxford</title>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     </head>
+
     <body>
-        <ul>
-            <li><a class="active" href="index.html">Oxford University</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li style="float:right"><a href="https://github.com/Ruann-Melo" target="_blank">Desenvolvedor</a></li>
-        </ul>
-        <div class="epm">
-            <h1>Bem Vindo</h1>
-            <p>Clique no botão abaixo para fazer download do livro de Etiqueta da Universidade de Oxford e aprender a se portar em sociedade.</p>
-            <a href="oxfordbook.pdf" download>
-                <button class="btn"><i class="fa fa-download"></i> Download</button>
+        <!-- First Section -->
+        <header id="section-1">
+            <div id="caption">
+                <h1 class="border">Bem Vindo</h1>
+                <hr style="margin:auto;width:10%">
+                <h3 class="border">Clique no botão abaixo para fazer download do livro de Etiqueta da Universidade de Oxford e aprender a se portar em sociedade.</h3>
+
+                <a href="static/oxford-book.pdf" download>
+                    <button id="btn">Download</button>
+                </a>
+                <br><span>Mais informações abaixo</span>
+            </div>
+        </header>
+
+        <!-- Second Section -->
+        <section id="section-2">
+            <div id="border-2">
+                <h1>Guia da Etiqueta Oxfordiana</h1>
+                <p>Um dos melhores livros da história. Maior sucesso da Universidade de Oxford. Do jovem escritor mais genial da história da humanidade, Ruann Melo.</p>
+                <p>Um livro que vai mudar seu comportamento para sempre e te tornar um verdadeiro Changeman, quer dizer, um verdadeiro Gentleman ou uma Lady caso você seja uma donzela.</p>
+                <img src="static/capa-oxford-book-small.jpg" alt="Capa do Ebook">
+                <br>
+                <a href="static/oxford-book.pdf" download>
+                    <button id="btn-2">Download</button>
+                </a>
+                <p>PS: Esse livro foi criado a partir de uma piada e não tem relação com a verdadeira Universidade de Oxford.</p>
+            </div>
+        </section>
+
+        <!-- Third Section -->
+        <footer id="section-3">
+            <a href="https://github.com/Ruann-Melo" target="_blank">
+                <i class="fa fa-github" style="font-size:35px"></i>
             </a>
-        </div>
+            <a href="https://www.linkedin.com/in/ruann-melo" target="_blank">
+                <i class="fa fa-linkedin" style="font-size:35px"></i>
+            </a>
+            <p>Powered by <a href="https://sonhotech.com/" target="_blank">SonhoTech</a></p>
+        </footer>
     </body>
 </html>

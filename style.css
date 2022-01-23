@@ -1,45 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
-ul {
-  list-style-type: none;
+body, html {
+  height: 100%;
   margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #002147;
+  font: 400 15px/1.8 "Raleway", sans-serif;
 }
-li {
-  float: left;
+
+#section-1 {
+  background-image: url("static/oxford-background-big.jpg");
+
+  height: 100%;
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-li a {
-  display: block;
-  color: white;
-  padding: 14px 16px;
-  font-size: 25px;
+
+/* Change image to smaller ones for smaller screens */
+@media (max-width: 1000px) {
+  #section-1 {
+      background-image: url("static/oxford-background-medium.jpg");
+  }
+}
+
+@media (max-width: 550px) {
+  #section-1 {
+      background-image: url("static/oxford-background-small.jpg");
+  }
+}
+
+#section-2 {
+  height: 100%;
+
+  padding: 18px;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  text-decoration: none;
 }
-li a:hover:not(.active) {
-  background-color: #2F72A8;
-}
-.active{
+
+#section-3 {
+  height: 5%;
+
+  padding: 50px;
+  color: #fff;
   background-color: #002147;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 }
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
+
+#caption {
+  position: absolute;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
-.btn {
-  background-color: DodgerBlue;
+
+.border {
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+#border-2 {
+  padding: 18px;
+  font-size: 0.95rem;
+  letter-spacing: 5px;
+}
+
+#btn {
   border: none;
-  color: white;
+  text-decoration: none;
+  background-color: #fff;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
   padding: 12px 30px;
   cursor: pointer;
   font-size: 20px;
 }
-.epm {
-    padding: 50px;
+
+#btn:hover {
+  background-color: #b2b2b2;
 }
-p{
-    font-family: Montserrat;
+
+#btn-2 {
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: #002147;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#btn-2:hover {
+  background-color: cadetblue;
+}
+
+a {
+  text-decoration: none;
+  color: cyan ;
+}
+
+a:hover {
+  color: #b2b2b2;
 }
