@@ -1,7 +1,24 @@
+/*
+  # Style Info
+
+  Color Palette:
+    - #002147 (Base Color - Oxford Blue)
+    - #0069E0
+    - #004594 (Not been used)
+    - #2C5D94 (Not been used)
+    - #1D3D61 (Not been used)
+
+*/
+
+/* Fonts */
+
+/* PT Sans and PT Sans Narrow */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+
 body, html {
   height: 100%;
   margin: 0;
-  font: 400 15px/1.8 "Raleway", sans-serif;
+  font: 400 16px/1.8 "PT Sans", sans-serif;
 }
 
 #section-1 {
@@ -13,6 +30,15 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  font-size: 1.65em;
+}
+
+h1 h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
 }
 
 /* Change image to smaller ones for smaller screens */
@@ -37,6 +63,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  font-size: 1.5em;
 }
 
 #section-3 {
@@ -49,6 +76,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  font-size: 1.2em;
 }
 
 #caption {
@@ -57,18 +85,16 @@ body, html {
   top: 25%;
   width: 100%;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: #fff;
 }
 
 .border {
   padding: 18px;
-  font-size: 25px;
   letter-spacing: 10px;
 }
 
 #border-2 {
   padding: 18px;
-  font-size: 0.95rem;
   letter-spacing: 5px;
 }
 
@@ -81,11 +107,11 @@ body, html {
   text-align: center;
   padding: 12px 30px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.3em;
 }
 
 #btn:hover {
-  background-color: #b2b2b2;
+  background-color: #0069E0;
 }
 
 #btn-2 {
@@ -102,14 +128,14 @@ body, html {
 }
 
 #btn-2:hover {
-  background-color: cadetblue;
+  background-color: #0069E0;
 }
 
 a {
   text-decoration: none;
-  color: cyan ;
+  color: #0069E0;
 }
 
 a:hover {
-  color: #b2b2b2;
+  color: #fff;
 }
