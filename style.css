@@ -37,7 +37,7 @@ body, html {
 /* Header Background */
 header {
     background-image: url("static/images/oxford-background-big.jpg");
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     background-repeat: no-repeat;
@@ -61,14 +61,14 @@ header {
 main {
     color: #fff;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 #main-btn {
     border: none;
     cursor: pointer;
-    font-size: 1.35rem;
+    font-size: 1.5rem;
     padding: 0.9rem 1.2rem;
     background-color: #fff;
 }
